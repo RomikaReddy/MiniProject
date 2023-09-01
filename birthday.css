@@ -1,0 +1,76 @@
+/* Styling for the birthday icon */
+.birthday-icon {
+    cursor: pointer;
+    transition: color 0.3s;/* Smooth color transition on hover */
+    padding-right:50px;/* Add padding to the right */
+    padding-top:30px; /* Add padding to the top */
+}
+/* Styling for the birthday icon when hovered */
+.birthday-icon.hovered {
+    color: blue; /* Change the color when hovered */
+}
+/* Styling for the profile card */
+.profile-card {
+    position: absolute;
+    top: 50px; /* Adjust the positioning as needed */
+    right:60px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding-right: 50px;
+    width:200;/* You need to specify the unit, e.g., 'px' or 'rem' */
+    height: max-content;
+    display: flex;
+    flex:1;
+    justify-content: flex;
+    overflow: scroll;/* Enable scrolling within the card */
+    overflow-x: hidden;/* Hide horizontal scrollbar */
+}
+
+.birthday-container:hover .profile-card {
+    display: block; /* Display the profile card on hover */
+}
+.username
+{
+    color:blue;
+    size: 100px;
+    font-weight: bold;
+    padding-left:10px;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+}
+.designation
+{
+    margin-left: 10px;
+    color:black;
+    padding: 0 0 0 0;
+    height: 30px;
+    transform: translateY(0px);/* This transformation doesn't affect the element */
+}
+/* Styling for the profile image container */
+.profileImage
+{
+    display:flex;
+    justify-content: flex-start;
+}
+/* Styling for the profile title */
+.profiletitle
+{
+    color:deeppink;
+}
+/* Keyframes for the animation */
+
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Apply the animation to the moving-text class */
+  .moving-text {
+    animation: moveRightToLeft 5s linear infinite; 
+    color: hotpink;/* Adjust the duration and timing function as needed */
+  }
