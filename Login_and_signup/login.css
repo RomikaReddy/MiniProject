@@ -1,0 +1,96 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.image
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float:left;
+}
+@media (max-width: 768px) {
+    .image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form {
+      width: 80%; /* Adjust the width as needed for smaller screens */
+    }
+  
+    .form input,
+    .form button {
+      width: 100%;
+    }
+  }
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-top:10px;
+}
+
+.form {
+  position: relative;
+  filter: drop-shadow(0 0 2px #000000);
+  border-radius: 5px;
+  max-width: 360px; /* Limit width to fit content */
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px;
+  box-sizing: border-box; /* Add this property to ensure padding is included in width */
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.form input:focus {
+  box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+
+.form button {
+  outline: 0;
+  background: #6a62d2;
+  width: 100%;
+  border: 0;
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: black;
+  color: #fff;
+}
+
+.message {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.form .message a {
+  font-size: 14px;
+  color: #6a62d2;
+  text-decoration: none;
+}
